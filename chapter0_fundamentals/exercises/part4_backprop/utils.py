@@ -14,7 +14,7 @@ Arr = np.ndarray
 # Make sure exercises are in the path
 chapter = "chapter0_fundamentals"
 section = "part4_backprop"
-root_dir = next(p for p in Path.cwd().parents if (p / chapter).exists())
+root_dir = next(p for p in Path(__file__).parents if (p / chapter).exists())
 exercises_dir = root_dir / chapter / "exercises"
 
 
